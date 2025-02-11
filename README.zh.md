@@ -19,7 +19,7 @@
 1. **克隆项目**
 
    ```
-   bash复制编辑git clone https://github.com/yourusername/stable_spider.git
+   git clone https://github.com/yourusername/stable_spider.git
    cd stable_spider
    ```
 
@@ -28,10 +28,6 @@
    确保你的 Python 版本 **≥ 3.7**，然后安装所需依赖：
 
    ```
-   bash
-   
-   
-   复制编辑
    pip install -r requirements.txt
    ```
 
@@ -41,8 +37,8 @@
 
 你可以继承 `Spider`（或 `SeleniumSpider`）来自定义爬虫，并实现相应的方法：
 
-```
-python复制编辑import asyncio
+```python
+import asyncio
 from stable_spider.core.engine import Engine
 from stable_spider.core.spider import Spider
 from stable_spider.core.request import StableRequest
@@ -73,8 +69,8 @@ if __name__ == "__main__":
 
 ## 📂 目录结构
 
-```
-plaintext复制编辑stable_spider/
+```plain
+stable_spider/
 ├── core/
 │   ├── engine.py              # 爬虫调度引擎
 │   ├── item.py                # 数据项定义及处理

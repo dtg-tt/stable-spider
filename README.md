@@ -17,7 +17,7 @@
 1.  **Clone the Repository**
 
     ```
-    bash复制编辑git clone https://github.com/yourusername/stable_spider.git
+    git clone https://github.com/yourusername/stable_spider.git
     cd stable_spider
     ```
 
@@ -26,10 +26,6 @@
     Ensure you have Python **3.7 or higher**, then install the required dependencies:
 
     ```
-    bash
-    
-    
-    复制编辑
     pip install -r requirements.txt
     ```
 
@@ -39,8 +35,8 @@
 
 You can create your custom spider by subclassing `Spider` (or `SeleniumSpider` for Selenium support) and implementing the required methods:
 
-```
-python复制编辑import asyncio
+```python
+import asyncio
 from stable_spider.core.engine import Engine
 from stable_spider.core.spider import Spider
 from stable_spider.core.request import StableRequest
@@ -72,7 +68,7 @@ if __name__ == "__main__":
 ## 📂 Project Structure
 
 ```
-plaintext复制编辑stable_spider/
+stable_spider/
 ├── core/
 │   ├── engine.py              # The main crawling engine
 │   ├── item.py                # Item definitions and processing
