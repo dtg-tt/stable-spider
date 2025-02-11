@@ -1,38 +1,41 @@
 # Stable Spider
 
-**Stable Spider** 是一个简单、清晰且可扩展的 Scrapy-like 爬虫框架，基于 Python 构建，支持异步爬取、Selenium 集成、请求/响应中间件以及日志管理，帮助你快速搭建高效稳定的爬虫。
+[English](README.md) | [中文](README.zh.md)
+
+**Stable Spider** 是一个简单、清晰且可扩展的 Scrapy-like 爬虫框架，基于 Python 构建，支持异步爬取、Selenium
+集成、请求/响应中间件以及日志管理，帮助你快速搭建高效稳定的爬虫。
 
 ## ✨ 特性
 
--   **异步爬取**：基于 `asyncio` 和 `httpx` 进行高并发 HTTP 请求。
--   **模块化架构**：核心组件包括 Request、Response、Spider、Scheduler、Downloader 和 Engine。
--   **中间件支持**：支持自定义请求和数据处理中间件，便于扩展功能。
--   **Selenium 集成**：提供 `SeleniumSpider` 以支持动态渲染页面的爬取。
--   **自动重试机制**：内置同步和异步的请求重试装饰器，提高稳定性。
--   **日志管理**：支持基于时间滚动的日志存储，方便调试和监控。
+- **异步爬取**：基于 `asyncio` 和 `httpx` 进行高并发 HTTP 请求。
+- **模块化架构**：核心组件包括 Request、Response、Spider、Scheduler、Downloader 和 Engine。
+- **中间件支持**：支持自定义请求和数据处理中间件，便于扩展功能。
+- **Selenium 集成**：提供 `SeleniumSpider` 以支持动态渲染页面的爬取。
+- **自动重试机制**：内置同步和异步的请求重试装饰器，提高稳定性。
+- **日志管理**：支持基于时间滚动的日志存储，方便调试和监控。
 
 ## 📦 安装
 
-1.  **克隆项目**
+1. **克隆项目**
 
-    ```
-    bash复制编辑git clone https://github.com/yourusername/stable_spider.git
-    cd stable_spider
-    ```
+   ```
+   bash复制编辑git clone https://github.com/yourusername/stable_spider.git
+   cd stable_spider
+   ```
 
-2.  **安装依赖**
+2. **安装依赖**
 
-    确保你的 Python 版本 **≥ 3.7**，然后安装所需依赖：
+   确保你的 Python 版本 **≥ 3.7**，然后安装所需依赖：
 
-    ```
-    bash
-    
-    
-    复制编辑
-    pip install -r requirements.txt
-    ```
+   ```
+   bash
+   
+   
+   复制编辑
+   pip install -r requirements.txt
+   ```
 
-    >   **注意**：如果需要使用 Selenium，请确保已安装相应的浏览器驱动，例如 ChromeDriver。
+   > **注意**：如果需要使用 Selenium，请确保已安装相应的浏览器驱动，例如 ChromeDriver。
 
 ## 🚀 快速开始
 
@@ -91,17 +94,19 @@ plaintext复制编辑stable_spider/
 
 ## ⚙️ 配置说明
 
--   **日志管理**：可以通过环境变量 `LOG_DIR_PATH` 和 `PROJECT_NAME` 进行配置，默认日志存储在 `./logs` 目录下，项目名称默认为 `project`。
--   **自定义中间件**：在爬虫类中，将自定义 `RequestMiddleware` 或 `ItemMiddleware` 添加到 `REQUEST_MIDDLEWARES` 和 `ITEM_MIDDLEWARES` 变量中。
--   **Selenium 支持**：使用 `SeleniumSpider` 代替 `Spider`，并传入 Selenium 相关配置。
+- **日志管理**：可以通过环境变量 `LOG_DIR_PATH` 和 `PROJECT_NAME` 进行配置，默认日志存储在 `./logs`
+  目录下，项目名称默认为 `project`。
+- **自定义中间件**：在爬虫类中，将自定义 `RequestMiddleware` 或 `ItemMiddleware` 添加到 `REQUEST_MIDDLEWARES`
+  和 `ITEM_MIDDLEWARES` 变量中。
+- **Selenium 支持**：使用 `SeleniumSpider` 代替 `Spider`，并传入 Selenium 相关配置。
 
 ## 🤝 贡献指南
 
 欢迎贡献代码或提交 Issue ！你可以通过以下方式参与：
 
-1.  **Fork 本仓库** 并创建新分支
-2.  提交你的更改，并 **创建 Pull Request**
-3.  我们会尽快 Review 并合并 🎉
+1. **Fork 本仓库** 并创建新分支
+2. 提交你的更改，并 **创建 Pull Request**
+3. 我们会尽快 Review 并合并 🎉
 
 ## 📜 许可证
 

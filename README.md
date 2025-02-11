@@ -1,4 +1,5 @@
 # Stable Spider
+[English](README.md) | [中文](README.zh.md)
 
 **Stable Spider** is a simple, clear, and extensible Scrapy-like web crawling framework built with Python. It supports asynchronous scraping, Selenium integration, request/response middleware, and robust logging, allowing you to build stable and efficient crawlers quickly.
 
